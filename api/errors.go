@@ -18,6 +18,10 @@ func NewGRPCError(code codes.Code, msg string) error {
 	return status.Errorf(code, msg)
 }
 
+func NewGRPCError2(code codes.Code, msg string) error {
+	return status.Errorf(code, msg)
+}
+
 // HTTP Mapping: 400 Bad Request
 func NewInvalidArgError(msg string) error {
 	return NewGRPCError(codes.InvalidArgument, msg)
