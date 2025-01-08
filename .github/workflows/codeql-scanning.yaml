@@ -1,4 +1,4 @@
-name: "CodeQL action"
+name: "codeql-scanning"
 
 on:
   push:
